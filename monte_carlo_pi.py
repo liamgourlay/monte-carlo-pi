@@ -6,8 +6,10 @@ def estimate_pi(n, seed = None):
 
     Parameters
     ----------
-    n : Number of random samples
-    seed : Random seed for reproducibility
+    n : int
+    Number of random samples
+    seed : int
+    Random seed for reproducibility
 
     Returns
     -------
@@ -26,3 +28,4 @@ if __name__ == "__main__":
     for runs in [100, 1_000, 10_000, 100_000]:
         pi_estimate = estimate_pi(runs, seed=42)
         print(f"n={runs}, Pi={pi_estimate:.6f}")
+
